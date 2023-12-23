@@ -3,6 +3,7 @@ React Template <sup>![Node Version Badge is Missing][node version badge]</sup>
 
 [![License Badge][license badge]](https://www.apache.org/licenses/LICENSE-2.0)
 ![GitHub last commit (master)](https://img.shields.io/github/last-commit/QubitPi/react-template/master?logo=github&style=for-the-badge)
+[![Covered by Argos Visual Testing](https://argos-ci.com/badge.svg)](https://app.argos-ci.com/qubitpi/react-template/reference)
 
 License
 -------
