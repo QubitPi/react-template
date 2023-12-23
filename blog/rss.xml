@@ -38,7 +38,6 @@ almost as if her answer to the question of how to use D3 with React is "You don'
 direct D3 to an SVG and <code>useEffect</code> to manipulate it.</p>
 <ul>
 <li><a href="https://blog.griddynamics.com/using-d3-js-with-react-js-an-8-step-comprehensive-manual/" target="_blank" rel="noopener noreferrer">griddynamics: Using D3.js with React.js: An 8-step comprehensive manual</a></li>
-<li><a href="https://www.pluralsight.com/guides/using-d3.js-inside-a-react-app" target="_blank" rel="noopener noreferrer">Pluralsight: Using D3.js Inside a React App</a></li>
 <li><a href="https://blog.logrocket.com/using-d3-js-v6-with-react/" target="_blank" rel="noopener noreferrer">LogRocket: Using D3.js v6 with React</a></li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="configurable-d3-graph">Configurable D3 Graph<a href="https://qubitpi.github.io/react-template/blog/d3-with-react#configurable-d3-graph" class="hash-link" aria-label="Direct link to Configurable D3 Graph" title="Direct link to Configurable D3 Graph">​</a></h2>
