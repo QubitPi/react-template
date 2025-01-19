@@ -27,14 +27,7 @@ to get D3 working inside the Virtual DOM. This problem has been solved a number 
 <a href="https://github.com/react-d3-library/react-d3-library" target="_blank" rel="noopener noreferrer">react-d3-library</a> that purported to let us use stock D3 code in React with just a few adjustments.
 However this package is no longer maintained and the last commit was 4 years ago. So this does not seem like the route
 to go down.</p>
-<p>Here are some of the other methods that people have written about.</p>
-<p>Amelia Wattenberger has written an excellent article <a href="https://wattenberger.com/blog/react-and-d3" target="_blank" rel="noopener noreferrer">React + D3</a> where she basically advocates that we
-shouldn't be using the D3 methods that render the SVG graphics, but to render them all manually using JSX and only use
-D3 methods that do math like calculating scale. On the one hand she may have a point here, but on the other hand she is
-basically throwing away the majority of the D3 methods and recreating them which is a huge duplication of effort. It's
-almost as if her answer to the question of how to use D3 with React is "You don't".</p>
-<p>The other sources that I have found seem to be on more of a similar page. They advocate a combination of <code>useRef</code> to
-direct D3 to an SVG and <code>useEffect</code> to manipulate it.</p>
+<p>Some advocate a combination of <code>useRef</code> to direct D3 to an SVG and <code>useEffect</code> to manipulate it.</p>
 <ul>
 <li><a href="https://blog.griddynamics.com/using-d3-js-with-react-js-an-8-step-comprehensive-manual/" target="_blank" rel="noopener noreferrer">griddynamics: Using D3.js with React.js: An 8-step comprehensive manual</a></li>
 <li><a href="https://blog.logrocket.com/using-d3-js-v6-with-react/" target="_blank" rel="noopener noreferrer">LogRocket: Using D3.js v6 with React</a></li>
