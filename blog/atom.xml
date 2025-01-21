@@ -66,7 +66,7 @@ at the top of the function.</p>
 <p>React will run our D3 code when the DOM is ready and when the data changes.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="generating-force-graph-simulation">Generating Force Graph Simulation<a href="https://fastui.qubitpi.org/blog/d3-with-react#generating-force-graph-simulation" class="hash-link" aria-label="Direct link to Generating Force Graph Simulation" title="Direct link to Generating Force Graph Simulation">​</a></h3>
 <p><strong>Due to changes in namespace from v3 to v4</strong>. The force layout <code>d3.layout.force</code> has been
-<a href="https://github.com/d3/d3/blob/master/CHANGES.md#forces-d3-force" target="_blank" rel="noopener noreferrer">renamed</a> to <a href="https://github.com/d3/d3-force" target="_blank" rel="noopener noreferrer"><code>d3.forceSimulation</code></a><sup><a href="https://fastui.qubitpi.org/blog/d3-with-react#user-content-fn-1-8166a6" id="user-content-fnref-1-8166a6" data-footnote-ref="true" aria-describedby="footnote-label">1</a></sup>. <em>It
+<a href="https://github.com/d3/d3/blob/master/CHANGES.md#forces-d3-force" target="_blank" rel="noopener noreferrer">renamed</a> to <a href="https://github.com/d3/d3-force" target="_blank" rel="noopener noreferrer"><code>d3.forceSimulation</code></a><sup><a href="https://fastui.qubitpi.org/blog/d3-with-react#user-content-fn-1-e99c49" id="user-content-fnref-1-e99c49" data-footnote-ref="true" aria-describedby="footnote-label">1</a></sup>. <em>It
 is, therefore, strongly recommended to read <a href="https://github.com/d3/d3-force" target="_blank" rel="noopener noreferrer"><code>d3.forceSimulation</code> documentation</a> thoroughly in order to
 understand what the following discussion is talking about</em>. After that, we will discuss how the code snipped can be
 changed to the following v4+ version:</p>
@@ -103,7 +103,7 @@ not specified, it defaults to 1 (single step).</p></div></div>
 <a href="https://www.d3indepth.com/force-layout/#forcemanybody" target="_blank" rel="noopener noreferrer">forceManyBody</a> and
 <a href="https://www.d3indepth.com/force-layout/#forcelink" target="_blank" rel="noopener noreferrer">forceLink</a>, respectively.</p>
 <p>The only effect that the old force layout.size had was to set the attraction point for the "gravity" force to be
-[width / 2, height / 2]. This has been replaced by the positioning forces <strong>d3.forceX</strong> and <strong>d3.forceY</strong><sup><a href="https://fastui.qubitpi.org/blog/d3-with-react#user-content-fn-2-8166a6" id="user-content-fnref-2-8166a6" data-footnote-ref="true" aria-describedby="footnote-label">2</a></sup></p>
+[width / 2, height / 2]. This has been replaced by the positioning forces <strong>d3.forceX</strong> and <strong>d3.forceY</strong><sup><a href="https://fastui.qubitpi.org/blog/d3-with-react#user-content-fn-2-e99c49" id="user-content-fnref-2-e99c49" data-footnote-ref="true" aria-describedby="footnote-label">2</a></sup></p>
 <p>We are done with the graph setup. Next we will define its behavior</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="grouping-nodes-and-links-for-batch-operations">Grouping Nodes and Links for Batch Operations<a href="https://fastui.qubitpi.org/blog/d3-with-react#grouping-nodes-and-links-for-batch-operations" class="hash-link" aria-label="Direct link to Grouping Nodes and Links for Batch Operations" title="Direct link to Grouping Nodes and Links for Batch Operations">​</a></h3>
 <p>We prepare this grouping so that we can apply certain operations on each node/link, such as re-loading every existing
@@ -237,11 +237,11 @@ contains a node, we would have something like the following:</p>
 </ul>
 <section data-footnotes="true" class="footnotes"><h2 class="anchor anchorWithStickyNavbar_LWe7 sr-only" id="footnote-label">Footnotes<a href="https://fastui.qubitpi.org/blog/d3-with-react#footnote-label" class="hash-link" aria-label="Direct link to Footnotes" title="Direct link to Footnotes">​</a></h2>
 <ol>
-<li id="user-content-fn-1-8166a6">
-<p><a href="https://stackoverflow.com/questions/49441793/d3-difference-between-layout-force-forcesimulation-to-build-network-graph#comment85885511_49441793" target="_blank" rel="noopener noreferrer">https://stackoverflow.com/questions/49441793/d3-difference-between-layout-force-forcesimulation-to-build-network-graph#comment85885511_49441793</a> <a href="https://fastui.qubitpi.org/blog/d3-with-react#user-content-fnref-1-8166a6" data-footnote-backref="" aria-label="Back to reference 1" class="data-footnote-backref">↩</a></p>
+<li id="user-content-fn-1-e99c49">
+<p><a href="https://stackoverflow.com/questions/49441793/d3-difference-between-layout-force-forcesimulation-to-build-network-graph#comment85885511_49441793" target="_blank" rel="noopener noreferrer">https://stackoverflow.com/questions/49441793/d3-difference-between-layout-force-forcesimulation-to-build-network-graph#comment85885511_49441793</a> <a href="https://fastui.qubitpi.org/blog/d3-with-react#user-content-fnref-1-e99c49" data-footnote-backref="" aria-label="Back to reference 1" class="data-footnote-backref">↩</a></p>
 </li>
-<li id="user-content-fn-2-8166a6">
-<p><a href="https://stackoverflow.com/a/62563459" target="_blank" rel="noopener noreferrer">https://stackoverflow.com/a/62563459</a> <a href="https://fastui.qubitpi.org/blog/d3-with-react#user-content-fnref-2-8166a6" data-footnote-backref="" aria-label="Back to reference 2" class="data-footnote-backref">↩</a></p>
+<li id="user-content-fn-2-e99c49">
+<p><a href="https://stackoverflow.com/a/62563459" target="_blank" rel="noopener noreferrer">https://stackoverflow.com/a/62563459</a> <a href="https://fastui.qubitpi.org/blog/d3-with-react#user-content-fnref-2-e99c49" data-footnote-backref="" aria-label="Back to reference 2" class="data-footnote-backref">↩</a></p>
 </li>
 </ol>
 </section>]]></content>
