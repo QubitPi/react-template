@@ -13,6 +13,24 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { NavBar } from "../components/NavBar";
+import { Banner } from "../components/Banner";
+import { Skills } from '../components/Skills';
+import { Projects } from '../components/Projects';
+import { Contact } from '../components/Contact';
+import { Footer } from '../components/Footer';
+
 export default function App(): JSX.Element {
-  return <>Did you see me, Lighthouse?</>;
+  return (
+    <div className="App">
+      <NavBar />
+      <Banner />
+      {/* <Skills /> */}
+      <Projects />
+      <Contact />
+      <Footer />
+    </div>
+  );
 }
