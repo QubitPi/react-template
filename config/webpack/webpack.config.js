@@ -28,7 +28,7 @@ module.exports = function (webpackEnv) {
     mode: isProdEnvironment ? "production" : "development",
     devtool: "source-map",
     output: {
-      publicPath: "/xiaoyu",
+      publicPath: "/xiaoyu/",
       path: path.resolve(__dirname, "../../dist"),
       filename: isProdEnvironment ? "static/js/[name].[contenthash:8].js" : "static/js/bundle.js",
     },
@@ -91,11 +91,11 @@ module.exports = function (webpackEnv) {
             : undefined,
         ),
       ),
-      sentryWebpackPlugin({
-        authToken: process.env.SENTRY_AUTH_TOKEN,
-        org: "paion-data",
-        project: "qubitpi-fast-ui",
-      }),
+      // sentryWebpackPlugin({
+      //   authToken: process.env.SENTRY_AUTH_TOKEN,
+      //   org: "paion-data",
+      //   project: "qubitpi-fast-ui",
+      // }),
     ],
     resolve: {
       extensions: [".ts", ".tsx", ".js", ".json"],
