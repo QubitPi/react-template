@@ -1,5 +1,6 @@
 {
   "name": "fast-ui-app",
+  "homepage": "https://fastui.qubitpi.org/xiaoyu/",
   "dependencies": {
     "animate.css": "^4.1.1",
     "bootstrap": "^5.1.3",
