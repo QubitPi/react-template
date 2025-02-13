@@ -229,7 +229,7 @@ jobs:
       - name: Load CNAME
         run: echo fastui.qubitpi.org > build/CNAME
       - name: Load Study Tour projects
-        run: cp -r ../dist ./docs/build/xiaoyu
+        run: cd ../ && yarn build && cp -r dist ./docs/build/xiaoyu
       - name: Deploy to GitHub Pages
         #if: github.ref == 'refs/heads/master'
         uses: peaceiris/actions-gh-pages@v3
